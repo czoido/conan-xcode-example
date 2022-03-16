@@ -18,6 +18,9 @@
 		4102E01F27E0F84800A6AD9D /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
 		4102E02027E0F84800A6AD9D /* hello.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hello.hpp; sourceTree = "<group>"; };
 		4102E03D27E1027F00A6AD9D /* libhello.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhello.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4102E03E27E1CEB000A6AD9D /* conan_config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conan_config.xcconfig; sourceTree = "<group>"; };
+		4102E03F27E1CEB000A6AD9D /* conantoolchain_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conantoolchain_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4102E04027E1CEB000A6AD9D /* conantoolchain.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conantoolchain.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,9 @@
 		4102E00F27E0F83900A6AD9D = {
 			isa = PBXGroup;
 			children = (
+				4102E03E27E1CEB000A6AD9D /* conan_config.xcconfig */,
+				4102E03F27E1CEB000A6AD9D /* conantoolchain_release_x86_64.xcconfig */,
+				4102E04027E1CEB000A6AD9D /* conantoolchain.xcconfig */,
 				4102E02327E0F99200A6AD9D /* src */,
 				4102E01927E0F83900A6AD9D /* Products */,
 			);
@@ -175,6 +181,7 @@
 /* Begin XCBuildConfiguration section */
 		4102E01A27E0F83900A6AD9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4102E03E27E1CEB000A6AD9D /* conan_config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -235,6 +242,7 @@
 		};
 		4102E01B27E0F83900A6AD9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4102E03E27E1CEB000A6AD9D /* conan_config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
