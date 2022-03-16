@@ -13,7 +13,7 @@ class HelloLib(ConanFile):
     generators = "XcodeToolchain"
 
     def layout(self):
-        self.folders.source = "."
+        print(self.folders.source)
 
     def export(self):
         git = Git(self, self.recipe_folder)
