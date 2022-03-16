@@ -7,30 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4102E02127E0F84800A6AD9D /* hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4102E01F27E0F84800A6AD9D /* hello.cpp */; };
-		4102E02227E0F84800A6AD9D /* hello.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4102E02027E0F84800A6AD9D /* hello.hpp */; };
 		4102E03627E1027F00A6AD9D /* hello.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4102E02027E0F84800A6AD9D /* hello.hpp */; };
 		4102E03827E1027F00A6AD9D /* hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4102E01F27E0F84800A6AD9D /* hello.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4102E01827E0F83900A6AD9D /* libhello.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhello.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		4102E01F27E0F84800A6AD9D /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
 		4102E02027E0F84800A6AD9D /* hello.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hello.hpp; sourceTree = "<group>"; };
 		4102E03D27E1027F00A6AD9D /* libhello.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libhello.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4102E03E27E1CEB000A6AD9D /* conan_config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conan_config.xcconfig; sourceTree = "<group>"; };
-		4102E03F27E1CEB000A6AD9D /* conantoolchain_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conantoolchain_release_x86_64.xcconfig; sourceTree = "<group>"; };
-		4102E04027E1CEB000A6AD9D /* conantoolchain.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conantoolchain.xcconfig; sourceTree = "<group>"; };
+		417484D427E208A300D3AB05 /* conantoolchain_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conantoolchain_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		417484D527E208A300D3AB05 /* conan_config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conan_config.xcconfig; sourceTree = "<group>"; };
+		417484D627E208A300D3AB05 /* conantoolchain.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conantoolchain.xcconfig; sourceTree = "<group>"; };
+		417484D727E208A300D3AB05 /* conantoolchain_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = conantoolchain_debug_x86_64.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4102E01627E0F83900A6AD9D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4102E03927E1027F00A6AD9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,9 +35,10 @@
 		4102E00F27E0F83900A6AD9D = {
 			isa = PBXGroup;
 			children = (
-				4102E03E27E1CEB000A6AD9D /* conan_config.xcconfig */,
-				4102E03F27E1CEB000A6AD9D /* conantoolchain_release_x86_64.xcconfig */,
-				4102E04027E1CEB000A6AD9D /* conantoolchain.xcconfig */,
+				417484D527E208A300D3AB05 /* conan_config.xcconfig */,
+				417484D727E208A300D3AB05 /* conantoolchain_debug_x86_64.xcconfig */,
+				417484D427E208A300D3AB05 /* conantoolchain_release_x86_64.xcconfig */,
+				417484D627E208A300D3AB05 /* conantoolchain.xcconfig */,
 				4102E02327E0F99200A6AD9D /* src */,
 				4102E01927E0F83900A6AD9D /* Products */,
 			);
@@ -55,7 +47,6 @@
 		4102E01927E0F83900A6AD9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4102E01827E0F83900A6AD9D /* libhello.dylib */,
 				4102E03D27E1027F00A6AD9D /* libhello.a */,
 			);
 			name = Products;
@@ -73,14 +64,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4102E01427E0F83900A6AD9D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4102E02227E0F84800A6AD9D /* hello.hpp in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4102E03527E1027F00A6AD9D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,26 +75,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4102E01727E0F83900A6AD9D /* hello-dynamic */ = {
+		4102E03427E1027F00A6AD9D /* hello */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4102E01C27E0F83900A6AD9D /* Build configuration list for PBXNativeTarget "hello-dynamic" */;
-			buildPhases = (
-				4102E01427E0F83900A6AD9D /* Headers */,
-				4102E01527E0F83900A6AD9D /* Sources */,
-				4102E01627E0F83900A6AD9D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "hello-dynamic";
-			productName = HelloLibrary;
-			productReference = 4102E01827E0F83900A6AD9D /* libhello.dylib */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4102E03427E1027F00A6AD9D /* hello-static */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4102E03A27E1027F00A6AD9D /* Build configuration list for PBXNativeTarget "hello-static" */;
+			buildConfigurationList = 4102E03A27E1027F00A6AD9D /* Build configuration list for PBXNativeTarget "hello" */;
 			buildPhases = (
 				4102E03527E1027F00A6AD9D /* Headers */,
 				4102E03727E1027F00A6AD9D /* Sources */,
@@ -121,7 +87,7 @@
 			);
 			dependencies = (
 			);
-			name = "hello-static";
+			name = hello;
 			productName = HelloLibrary;
 			productReference = 4102E03D27E1027F00A6AD9D /* libhello.a */;
 			productType = "com.apple.product-type.library.static";
@@ -134,11 +100,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
-				TargetAttributes = {
-					4102E01727E0F83900A6AD9D = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
-				};
 			};
 			buildConfigurationList = 4102E01327E0F83900A6AD9D /* Build configuration list for PBXProject "HelloLibrary" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -153,21 +114,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4102E01727E0F83900A6AD9D /* hello-dynamic */,
-				4102E03427E1027F00A6AD9D /* hello-static */,
+				4102E03427E1027F00A6AD9D /* hello */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4102E01527E0F83900A6AD9D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4102E02127E0F84800A6AD9D /* hello.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4102E03727E1027F00A6AD9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,7 +133,6 @@
 /* Begin XCBuildConfiguration section */
 		4102E01A27E0F83900A6AD9D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4102E03E27E1CEB000A6AD9D /* conan_config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -242,7 +193,6 @@
 		};
 		4102E01B27E0F83900A6AD9D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4102E03E27E1CEB000A6AD9D /* conan_config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -294,32 +244,6 @@
 			};
 			name = Release;
 		};
-		4102E01D27E0F83900A6AD9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				EXECUTABLE_EXTENSION = dylib;
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = mh_dylib;
-				PRODUCT_NAME = hello;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		4102E01E27E0F83900A6AD9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				EXECUTABLE_EXTENSION = dylib;
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = mh_dylib;
-				PRODUCT_NAME = hello;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		4102E03B27E1027F00A6AD9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -358,16 +282,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4102E01C27E0F83900A6AD9D /* Build configuration list for PBXNativeTarget "hello-dynamic" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4102E01D27E0F83900A6AD9D /* Debug */,
-				4102E01E27E0F83900A6AD9D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4102E03A27E1027F00A6AD9D /* Build configuration list for PBXNativeTarget "hello-static" */ = {
+		4102E03A27E1027F00A6AD9D /* Build configuration list for PBXNativeTarget "hello" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4102E03B27E1027F00A6AD9D /* Debug */,
