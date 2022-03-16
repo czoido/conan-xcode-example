@@ -12,6 +12,9 @@ class HelloLib(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "XcodeToolchain"
 
+    def layout(self):
+        self.folders.source = "."
+
     def export(self):
         git = Git(self, self.recipe_folder)
         scm_url, scm_commit = git.get_url_and_commit()
