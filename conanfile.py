@@ -13,14 +13,12 @@ class HelloLib(ConanFile):
     generators = "XcodeToolchain"
 
     def layout(self):
-        print("------>>>", self.folders.source)
+        self.folders.source = "."
 
     def export(self):
         git = Git(self, self.recipe_folder)
         scm_url, scm_commit = git.get_url_and_commit()
         # we store the current url and commit in conandata.yml
-        print(scm_url)
-        print(scm_commit)
         update_conandata(self, {"sources": {"commit": scm_commit, "url": scm_url}})
 
     def source(self):
