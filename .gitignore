@@ -1,13 +1,7 @@
 .DS_Store
 build/
-conan_config.xcconfig
-conan.lock
-conanbuildinfo.txt
-conaninfo.txt
-conantoolchain_debug_x86_64.xcconfig
-conantoolchain_release_x86_64.xcconfig
-conantoolchain.xcconfig
+*conan*
 graph_info.json
-HelloLibrary.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-HelloLibrary.xcodeproj/project.xcworkspace/xcuserdata/carlosz.xcuserdatad/UserInterfaceState.xcuserstate
-HelloLibrary.xcodeproj/xcuserdata/carlosz.xcuserdatad/xcschemes/xcschememanagement.plist
+HelloLibrary.xcodeproj/project.xcworkspace/xcshareddata/*
+HelloLibrary.xcodeproj/project.xcworkspace/xcuserdata/*
+HelloLibrary.xcodeproj/xcuserdata/carlosz.xcuserdatad/*
