@@ -9,18 +9,14 @@ class HelloLib(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "XcodeToolchain"
     exports_sources = "HelloLibrary.xcodeproj/*", "src/*"
-    options = {"shared": [True, False], "fPIC": [True, False]}
-    default_options = {"shared": False, "fPIC": True}
 
     def build(self):
         xcode = XcodeBuild(self)
-        if self.options.shared:
-            xcode.build("HelloLibrary.xcodeproj", target="hello-dynamic")
-        else:
-            xcode.build("HelloLibrary.xcodeproj", target="hello-static")
+        xcode.build("HelloLibrary.xcodeproj")
 
     def package(self):
-        copy(self, "*/libhello*", src=self.build_folder, dst=os.path.join(self.package_folder, "lib"), keep_path=False)
+        copy(self, "*/libhello.a", src=self.build_folder, dst=os.path.join(self.package_folder, "lib"), keep_path=False)
+        copy(self, "src/hello.hpp", src=self.build_folder, dst=os.path.join(self.package_folder, "lib"), keep_path=False)
 
     def package_info(self):
         self.cpp_info.libs = ["hello"]
