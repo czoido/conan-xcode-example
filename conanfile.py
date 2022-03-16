@@ -14,10 +14,13 @@ class HelloLib(ConanFile):
 
     def build(self):
         xcode = XcodeBuild(self)
-        xcode.build("HelloLibrary.xcodeproj")
+        if self.options.shared:
+            xcode.build("HelloLibrary.xcodeproj", target="hello-dynamic")
+        else:
+            xcode.build("HelloLibrary.xcodeproj", target="hello-static")
 
     def package(self):
-        copy(self, "*/libHelloLibrary*", src=self.build_folder, dst=os.path.join(self.package_folder, "lib"), keep_path=False)
+        copy(self, "*/libhello*", src=self.build_folder, dst=os.path.join(self.package_folder, "lib"), keep_path=False)
 
     def package_info(self):
         self.cpp_info.libs = ["hello"]
