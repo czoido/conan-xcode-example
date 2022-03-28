@@ -135,6 +135,7 @@
 /* Begin XCBuildConfiguration section */
 		4102E01A27E0F83900A6AD9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417484D527E208A300D3AB05 /* conan_config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -195,6 +196,7 @@
 		};
 		4102E01B27E0F83900A6AD9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417484D527E208A300D3AB05 /* conan_config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
